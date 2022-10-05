@@ -135,13 +135,13 @@ export default function User({ $ }) {
                                     
                                     {user.permissions.includes('*') && (
                                         <Tippy content="Administrator">
-                                            <i className="fa fa-crown text-2xl text-amber-500 mr-1 absolute -left-3 -rotate-[30deg] -top-3" />
+                                            <i className="fa fa-crown text-2xl text-amber-500 mr-1 absolute -left-3 -rotate-[30deg] -top-3" style={{zIndex:99999}} />
                                         </Tippy>
                                     )}
                                     </p>
                                     <div className="flex items-center mt-2 gap-x-2">
                                         {user.permissions.includes('MODERATOR') && (
-                                            <i className="fal fa-bolt text-2xl text-amber-500 mr-1" />
+                                            <i className="fal fa-bolt text-2xl text-amber-500 mr-1" style={{zIndex:99999}} />
                                         )}
                                         
                                     </div>
